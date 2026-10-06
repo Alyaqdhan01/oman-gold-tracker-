@@ -11,12 +11,12 @@ import {
 })
 export class LanguageService {
 
-  currentLanguage = signal<Language>('ar');
+  currentLanguage = signal<Language>('en');
 
   toggleLanguage(): void {
 
     const newLanguage: Language =
-      this.currentLanguage() === 'ar' ? 'en' : 'ar';
+      this.currentLanguage() === 'en' ? 'ar' : 'en';
 
     this.currentLanguage.set(newLanguage);
 
